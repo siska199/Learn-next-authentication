@@ -1,5 +1,5 @@
 import NextAuth from 'next-auth'
-import TwitterProvider from 'next-auth/providers/twitter'
+import GoogleProvider from 'next-auth/providers/google'
 import GitHubProvider from 'next-auth/providers/github'
 
 export default NextAuth({
@@ -8,9 +8,9 @@ export default NextAuth({
       clientId: 'd297687e4849064ae607',
       clientSecret: 'dd1ba9b5c2c0eb31429d9a03c8945bdcf5d45183',
     }),
-    // TwitterProvider({
-    //     clientId: process.env.TWITTER_CLIENT_ID,
-    //     clientSecret: process.env.TWITTER_CLIENT_SECRET
-    //   })
+    GoogleProvider({
+        clientId: "235416979902-39qrfq4mkdfkpl64ae99pt57pvs1b1mr.apps.googleusercontent.com",
+        clientSecret: "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"
+      })
   ],
 })
